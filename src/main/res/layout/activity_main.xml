@@ -1,0 +1,169 @@
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width ="match_parent"
+        android:layout_height ="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/pic"
+                android:layout_marginBottom="30dp"/>
+            <EditText
+                android:id="@+id/name_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quiz Taker's Name"
+                android:gravity="center"
+                android:inputType="textCapWords" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="1 of 4 "
+                android:padding="24sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Where is Zuma Rock located"
+                android:padding="24sp"
+                android:textAllCaps="false"
+                android:textStyle="bold"/>
+
+            <CheckBox
+                android:id="@+id/question1_choice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="Abuja"
+                android:textSize="16sp" />
+            <CheckBox
+                android:id="@+id/question1_choice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lagos"
+                android:paddingLeft="24dp"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <CheckBox
+                android:id="@+id/question1_choice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kaduna"
+                android:paddingLeft="24dp"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <CheckBox
+                android:id="@+id/question1_choice4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kano"
+                android:paddingLeft="24dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_marginBottom="60dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="2 of 4"
+                android:padding="24sp"/>
+
+            <EditText
+                android:id="@+id/question2_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="What is the capital of Ghana"
+                android:gravity="center"
+                android:inputType="textCapWords" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="3 of 4"
+                android:padding="24sp"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton android:id="@+id/question3__choice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AU stands for African Union"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/question3_choice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" AU Stands for Abuja Union"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="4 of 4"
+                android:padding="24sp"/>
+
+            <EditText
+                android:id="@+id/question4_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Which African Country is the Headquater of AU located"
+                android:gravity="center"
+                android:inputType="textCapWords" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/submit_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#40e9ff"
+
+                    android:gravity="center_horizontal"
+                    android:onClick="submitResult"
+                    android:text="Submit"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="132dp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
